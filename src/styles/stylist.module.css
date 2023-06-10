@@ -1,0 +1,332 @@
+
+.navbar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 60px;
+    align-items: center;
+    background: #3a3a3a;
+    position: fixed;
+    z-index: 999;
+}
+
+.navbar .title a{
+    font-size: 25px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.navbar ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar ul li{
+    margin: 0 20px;
+    list-style: none;
+}
+
+.navbar ul li a{
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    transition: all 0.5s;
+}
+
+.navbar ul li a:hover{
+    background: crimson;
+}
+
+.navbar .fly{
+    width: 400px;
+    position: absolute;
+    left: 50%;
+    top: -100%;
+    transform: translateX(-50%);
+    padding: 15px;
+    background: #3a3a3a;
+    border-radius: 5px;
+    transition: all 0.6s;
+}
+
+.navbar .fly.active{
+    top: 105%;
+}
+
+.navbar .fly .search{
+    width: 100%;
+    display: flex;
+}
+
+.navbar .search input{
+    width: 100%;
+    padding: 10px 15px;
+    outline: none;
+}
+
+.navbar .search button{
+    width: 60px;
+    margin-left: 10px;
+}
+
+.navbar .opt{
+    display: flex;
+}
+
+.navbar .opt a{
+    margin: 0 10px;
+}
+
+.navbar .opt .menu{
+    display: none;
+}
+
+.home{
+    width: 100%;
+    padding-top: 120px;
+}
+
+.home .title{
+    padding: 0 100px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.home .daftarnime{
+    padding: 40px 140px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card{
+    width: 150px;
+    height: 200px;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+}
+
+.card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card .foreground{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.card .foreground:hover{
+    background: rgba(0,0,0,0.5);
+}
+
+.card .foreground .epske{
+    position: absolute;
+    top: -50px;
+    left: 5px;
+    padding: 5px;
+    background: crimson;
+    transition: all 0.5s;
+}
+
+.card .foreground .namanime{
+    position: absolute;
+    bottom: -70px;
+    left: 0;
+    padding: 5px;
+    background: rgba(0,1,1,0.5);
+    width: 100%;
+    transition: all 0.5s;
+}
+
+.card .foreground:hover .epske{
+    top: 5px;
+}
+
+.card .foreground:hover .namanime{
+    bottom: 0;
+}
+
+.card .animator{
+    width: 100%;
+    height: 100%;
+    position:absolute;
+    top: 0;
+    left: 0;
+    animation: skelly 1s infinite; 
+    box-shadow: 42px 60px 113px 19px rgba(140,140,140,0.75) inset;
+    -webkit-box-shadow: 42px 60px 113px 19px rgba(140,140,140,0.75) inset;
+    -moz-box-shadow: 42px 60px 113px 19px rgba(140,140,140,0.75) inset;
+}
+
+.detail{
+    width: 600px;
+    margin: 0 auto;
+    padding: 140px 0 0 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.detail .gambar{
+    width: 40%;
+}
+
+.detail .gambar img{
+     width: 200px;
+}
+
+.detail .info{
+    margin-left: 10px;
+    width: auto;
+}
+
+.sinopsis{
+    width: 600px;
+    margin: 10px auto;
+    padding: 20px;
+    background: rgba(95, 95, 95, 0.5);
+}
+
+.epslist{
+    width: 600px;
+    margin: 10px auto;
+    background: rgba(95, 95, 95, 0.5);
+    padding: 20px;
+}
+
+.epslist .box{
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+    background: crimson;
+    margin: 10px 0;
+}
+
+.iframe{
+    width: 600px;
+    padding: 140px 0 0 0;
+    margin: 0 auto;
+}
+
+.iframe iframe{
+    width: 100%;
+    height: 350px;
+}
+
+.judul{
+    width: 600px;
+    margin: 10px auto;
+    padding: 20px;
+    background: crimson;
+}
+
+.download{
+    width: 600px;
+    margin: 10px auto;
+    padding: 20px;
+}
+
+@keyframes skelly{
+    0%{
+        opacity: 0.8;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0.7;
+    }
+}
+
+@media(max-width: 720px){
+    .navbar{
+        padding: 15px 25px;
+    }
+
+    .navbar ul{
+        position: absolute;
+        background: #3a3a3a;
+        width: 50%;
+        height: 100vh;
+        top: 100%;
+        left: -100%;
+        flex-direction: column;
+        justify-content: flex-start;
+        transition: all 0.7s;
+    }
+
+    .navbar.active ul{
+        left: 0;
+    }
+
+    .navbar ul li{
+        margin: 20px 0;
+    }
+
+    .navbar .opt .menu{
+        display: block;
+    }
+
+    .navbar .fly{
+        width: 270px;
+    }
+
+    .home{
+        padding-top: 90px;
+    }
+
+    .home .title{
+        padding: 0 50px;
+    }
+
+    .home .daftarnime{
+        padding: 40px 50px;
+    }
+
+    .card{
+        width: 120px;
+        height: 180px;
+    }
+
+    .detail{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .detail .gambar{
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .detail .gambar img{
+        margin: auto;
+        display: block;
+    }
+
+    .sinopsis, .epslist{
+        width: 100%;
+    }
+
+    .iframe{
+        width: 80%;
+    }
+
+    .judul{
+        width: 100%;
+    }
+
+    .download{
+        width: 100%;
+    }
+}

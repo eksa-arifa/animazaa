@@ -140,7 +140,7 @@
 
 .card .foreground .namanime{
     position: absolute;
-    bottom: -70px;
+    bottom: -100%;
     left: 0;
     padding: 5px;
     background: rgba(0,1,1,0.5);

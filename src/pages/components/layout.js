@@ -10,7 +10,7 @@ export default function Layout(props){
             <title>Animazaa | {props.title}</title>
         </Head>
         <Navbar/>
-        <div style={{minHeight: 1000}}>
+        <div style={{minHeight: 1000, background: black}}>
         {props.children}
         </div>
         </>

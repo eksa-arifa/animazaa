@@ -1,4 +1,6 @@
-
+.body{
+    background: rgb(49, 49, 49);
+}
 .navbar{
     width: 100%;
     display: flex;

@@ -298,6 +298,14 @@
         height: 160px;
     }
 
+    .card .foreground .namanime{
+        font-size: 15px;
+    }
+
+    .card .foreground .epske{
+        font-size: 15px;
+    }
+
     .detail{
         width: 100%;
         flex-direction: column;

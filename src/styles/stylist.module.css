@@ -257,6 +257,31 @@
     font-size: 22px;
 }
 
+.footer{
+    width: 100%;
+    background: black;
+}
+
+.footer .socmed{
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    gap: 15px;
+    padding: 70px 0;
+}
+
+.footer .socmed a{
+    padding: 10px;
+    border-radius: 5px;
+    background: crimson;
+}
+
+.footer .foot{
+    width: 100%;
+    text-align: center;
+    padding: 50px 0;
+}
+
 @keyframes skelly{
     0%{
         opacity: 0.8;

@@ -23,9 +23,9 @@ export default function Search({posts}){
                     Pencarian:
                 </div>
                 <div className={Stylist.daftarnime}>
-                    {posts.data.arr.map((anime)=>{
+                    {(posts.data.arr.length != 0)?posts.data.arr.map((anime)=>{
                       return <Card epoint={anime.endpoint} key={anime.id} thumb={anime.thumb} judul={anime.nama} epske={anime.rating}/>
-                    })}
+                    }): <h2>Anime Tidak Ditemukan</h2>}
                 </div>
             </div>
             </Layout>

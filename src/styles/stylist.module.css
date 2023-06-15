@@ -1,5 +1,6 @@
 .body{
     background: rgb(49, 49, 49);
+    padding-bottom: 40px;
 }
 .navbar{
     width: 100%;
@@ -102,6 +103,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 10px;
 }
 
 .card{
@@ -110,7 +112,6 @@
     border-radius: 10px;
     position: relative;
     overflow: hidden;
-    margin: 10px;
 }
 
 .card img{
@@ -236,6 +237,24 @@
     width: 600px;
     margin: 10px auto;
     padding: 20px;
+}
+
+.genrecard a{
+    padding: 10px;
+    background: crimson;
+    display: block;
+}
+
+.routepage{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.routepage a{
+    padding: 10px 20px;
+    background: crimson;
+    font-weight: bold;
+    font-size: 22px;
 }
 
 @keyframes skelly{

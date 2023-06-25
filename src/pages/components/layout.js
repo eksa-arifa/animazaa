@@ -4,7 +4,7 @@ import Stylist from "@/styles/stylist.module.css";
 import { Instagram } from "react-feather";
 import { GitHub } from "react-feather";
 import Link from "next/link";
-
+import { Analytics } from '@vercel/analytics/react';
 
 export default function Layout(props){
     
@@ -24,6 +24,8 @@ export default function Layout(props){
             </div>
             <div className={Stylist.foot}>Salam hangat kami Animazaa</div>
         </footer>
+
+        <Analytics/>
         </>
     )
 }

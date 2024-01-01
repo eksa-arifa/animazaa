@@ -22,7 +22,7 @@ export default function Layout(props){
                 <Link href={"https://instagram.com/eksrifaa"}><Instagram/></Link>
                 <Link href={"https://github.com/eksa-arifa"}><GitHub/></Link>
             </div>
-            <div className={Stylist.foot}>Salam hangat kami Animazaa</div>
+            <div className={Stylist.foot}>Copyright eksrifaa 2023</div>
         </footer>
 
         <Analytics/>
